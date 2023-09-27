@@ -1,0 +1,45 @@
+[
+  {
+    "id": 1,
+    "title": "question 1",
+    "answer": "Answer 1",
+    "tags": [{ "value": "React", "label": "React" }]
+  },
+  {
+    "id": 2,
+    "title": "question 2",
+    "answer": "Answer 2",
+    "tags": [
+      { "value": "Java", "label": "Java" },
+      { "value": "Kafka", "label": "Kafka" }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "question 3",
+    "answer": "Answer 3",
+    "tags": [
+      { "value": "Kafka", "label": "Kafka" },
+      { "value": "React", "label": "React" },
+      { "value": "Kotlin", "label": "Kotlin" },
+      { "value": "Kubernetes", "label": "Kubernetes" }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "question 4",
+    "answer": "Answer 4",
+    "tags": [
+      { "value": "Docker", "label": "Docker" },
+      { "value": "Java", "label": "Java" },
+      { "value": "Spring Cloud", "label": "Spring Cloud" },
+      { "value": "GCP", "label": "GCP" }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "question 5",
+    "answer": "Answer 5",
+    "tags": [{ "value": "Tag 10", "label": "Tag 10" }]
+  }
+]
