@@ -1,13 +1,13 @@
 import { Controller, Get, Query } from '@nestjs/common';
 import { AppService } from '../services/app.service';
-// import { Response } from 'express';
+import { Question } from 'src/types/questions.interface';
 
 @Controller()
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
   @Get('questions')
-  getQuestions(): any {
+  getQuestions(): ReadonlyArray<Question> {
     const questions = this.appService.getQuestions();
 
     return questions;

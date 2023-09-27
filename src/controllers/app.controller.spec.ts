@@ -24,8 +24,9 @@ describe('AppController', () => {
     appService = module.get<AppService>(AppService);
   });
   it('should return questions', async () => {
-    // eslint-disable-next-line prettier/prettier
-    jest.spyOn(appService, 'getQuestions').mockImplementation(() => questionsData);
+    jest
+      .spyOn(appService, 'getQuestions')
+      .mockImplementation(() => questionsData);
     expect(await appController.getQuestions()).toBe(questionsData);
   });
 });

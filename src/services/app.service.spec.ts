@@ -14,7 +14,7 @@ describe('AppService', () => {
     expect(appService).toBeDefined();
   });
   it('should return a greeting message with the given first name', () => {
-    const firstName = 'John';
+    const firstName = 'Mr. le testeur';
 
     const result = appService.getGrettings(firstName);
 
