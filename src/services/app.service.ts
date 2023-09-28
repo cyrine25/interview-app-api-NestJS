@@ -1,11 +1,13 @@
 import { Injectable } from '@nestjs/common';
 import * as questionsData from '../../data/questions.json';
-import { Question } from 'src/types/questions.interface';
-import { greeting } from 'src/types/greetings.interface';
+import { Question } from '../types/questions.interface';
+import { greeting } from '../types/greetings.interface';
+import * as tracksData from '../../data/tracks.json';
+import { Tracks } from '../types/tracks.interface';
 
 @Injectable()
 export class AppService {
-  getGrettings(firstName: string): greeting {
+  getGreetings(firstName: string): greeting {
     const message = `Bonjour, ${firstName} !`;
     const response = { message };
 
@@ -13,5 +15,8 @@ export class AppService {
   }
   getQuestions(): ReadonlyArray<Question> {
     return questionsData;
+  }
+  getTracks(): ReadonlyArray<Tracks> {
+    return tracksData;
   }
 }

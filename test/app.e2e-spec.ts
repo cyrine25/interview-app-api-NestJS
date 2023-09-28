@@ -3,6 +3,7 @@ import { INestApplication } from '@nestjs/common';
 import * as request from 'supertest';
 import { AppModule } from './../src/app.module';
 import * as questionsData from '../data/questions.json';
+import * as tracksData from '../data/tracks.json';
 
 describe('AppController (e2e)', () => {
   let app: INestApplication;
@@ -30,5 +31,11 @@ describe('AppController (e2e)', () => {
       .expect(200);
 
     expect(response.body.message).toBe(`Bonjour, ${name} !`);
+  });
+  it('/tracks (GET)', () => {
+    return request(app.getHttpServer())
+      .get('/tracks')
+      .expect(200)
+      .expect(tracksData);
   });
 });

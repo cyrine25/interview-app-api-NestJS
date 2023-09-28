@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "track": "Programming Languages",
+    "seniority_levels": [
+      { "id": 1, "level": "Junior" },
+      { "id": 2, "level": "Intermediate" },
+      { "id": 3, "level": "Senior" }
+    ]
+  },
+  {
+    "id": 2,
+    "track": "Web Development",
+    "seniority_levels": [
+      { "id": 1, "level": "Junior" },
+      { "id": 2, "level": "Intermediate" },
+      { "id": 3, "level": "Senior" }
+    ]
+  },
+  {
+    "id": 3,
+    "track": "Database Management",
+    "seniority_levels": [
+      { "id": 1, "level": "Junior" },
+      { "id": 2, "level": "Intermediate" },
+      { "id": 3, "level": "Senior" }
+    ]
+  },
+  {
+    "id": 4,
+    "track": "Artificial Intelligence",
+    "seniority_levels": [
+      { "id": 1, "level": "Junior" },
+      { "id": 2, "level": "Intermediate" },
+      { "id": 3, "level": "Senior" }
+    ]
+  },
+  {
+    "id": 5,
+    "track": "Cybersecurity",
+    "seniority_levels": [
+      { "id": 1, "level": "Junior" },
+      { "id": 2, "level": "Intermediate" },
+      { "id": 3, "level": "Senior" }
+    ]
+  }
+]

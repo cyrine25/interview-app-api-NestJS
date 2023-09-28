@@ -1,6 +1,7 @@
 import { Controller, Get, Query } from '@nestjs/common';
 import { AppService } from '../services/app.service';
-import { Question } from 'src/types/questions.interface';
+import { Question } from '../types/questions.interface';
+import { Tracks } from '../types/tracks.interface';
 
 @Controller()
 export class AppController {
@@ -13,7 +14,11 @@ export class AppController {
     return questions;
   }
   @Get('greetings')
-  getGrettings(@Query('firstname') firstname: string) {
-    return this.appService.getGrettings(firstname);
+  getGreetings(@Query('firstname') firstname: string) {
+    return this.appService.getGreetings(firstname);
+  }
+  @Get('tracks')
+  getTracks(): ReadonlyArray<Tracks> {
+    return this.appService.getTracks();
   }
 }
